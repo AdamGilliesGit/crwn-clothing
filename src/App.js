@@ -36,7 +36,7 @@ class App extends React.Component {
         });
       }
 
-      setCurrentUser({ currentUser: userAuth });
+      setCurrentUser(userAuth);
     });
   }
 
@@ -45,7 +45,6 @@ class App extends React.Component {
   }
 
   render() {
-
     return (
       <div>
         <Header />
