@@ -13,7 +13,7 @@ import { ReactComponent as Logo } from '../../assets/crwn_logo.svg';
 import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => {
-
+  console.log(currentUser);
   return (
     <div className="header">
       <Link className="logo-container" to="/">
@@ -44,7 +44,7 @@ const Header = ({ currentUser, hidden }) => {
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  hidden: selectCartHidden
+  hidden: selectCartHidden,
 });
 
 export default connect(mapStateToProps)(Header);
